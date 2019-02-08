@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
-//#include "graph.h"
-
+#include "common.h"
+#include "vertex.h"
 
 using namespace std;
-
-class Vertex;
 
 class Bitmap {
 private:
@@ -18,20 +16,3 @@ public:
     bool getBool();
     Vertex* getVertex();
 };
-
-Bitmap::Bitmap(Vertex* ver, bool value){
-    vertice = ver;
-    bit = value;
-}
-
-void Bitmap::setBool(bool value){
-    bit = value;
-}
-
-bool Bitmap::getBool(){
-    return bit;
-}
-
-Vertex* Bitmap::getVertex(){
-    return vertice;
-}

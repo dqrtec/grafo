@@ -14,7 +14,7 @@ Graph::Graph(int N) {
     this->adjL = new list<int>[N]; // Cria N listas de adjacências
     this->V = new Vertex[N];
     for (int i = 0; i < N; i++){
-        this->V[i].setId(i);
+        (this->V[i]).setId(i);
     }
 }
 
@@ -91,6 +91,8 @@ int* Graph::ecentricidadeVertices(){
     return listaEcentricidadeVertices;
 }
 
+// Retorna Ordem das labels e coloca a ecentricidade
+// das respectivas labels na variavel ecentricidadeQ
 string* Graph::ListaM(int* ecentricidadeQ) {
 
     int *ecc = ecentricidadeVertices();
@@ -105,6 +107,8 @@ string* Graph::ListaM(int* ecentricidadeQ) {
     for (int i = 1; i < N; i++) {
         listaTrocas[i] = i;
         j = i;
+        // Implementacao de Um INSERTION SORT
+        // para ordenar as ecentricidades
         while ((listaEcentricidadesOrdenadas[j - 1] > listaEcentricidadesOrdenadas[i]) && (j != 0)) {
             j--;
 
@@ -116,15 +120,12 @@ string* Graph::ListaM(int* ecentricidadeQ) {
             listaTrocas[j] = listaTrocas[i];
             listaTrocas[i] = aux;
         }
-
     }
-
 
     for (int k = 0; k < N; k++) {
         ordemLabels[k] = V[ listaTrocas[k] ].getLabel();
         ecentricidadeQ[k] = listaEcentricidadesOrdenadas[k];
     }
-
 
     return ordemLabels;
 }
@@ -181,27 +182,10 @@ int Graph::getM() {
     return this->M;
 }
 
-
 list<int>* Graph::getAdjL() {
     return this->adjL;
 }
 
 Vertex* Graph::getV() {
     return this->V;
-}
-
-int Vertex::getId() {
-    return this->id;
-}
-
-void Vertex::setId(int id) {
-    this->id = id;
-}
-
-string Vertex::getLabel() {
-    return this->label;
-}
-
-void Vertex::setLabel(string label) {
-    this->label = label;
 }
