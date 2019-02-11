@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/bitmap.h
+bits/stdc++.h
+-
+common.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/common.h
+vertex.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/vertex.h
+
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/common.h
+
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/graphbitmap.cpp
+graphbitmap.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/graphbitmap.h
+
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/graphbitmap.h
+bits/stdc++.h
+-
+common.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/common.h
+bitmap.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/bitmap.h
+
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/vertex.h
+string
+-
+common.h
+C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/common.h
+
