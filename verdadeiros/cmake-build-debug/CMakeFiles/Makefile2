@@ -49,19 +49,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Daniel\Desktop\verdadeiros
+CMAKE_SOURCE_DIR = C:\Users\Arida\Desktop\verdadeiros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/PatternMatching.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug
 CMakeFiles/PatternMatching.dir/all:
 	$(MAKE) -f CMakeFiles\PatternMatching.dir\build.make CMakeFiles/PatternMatching.dir/depend
 	$(MAKE) -f CMakeFiles\PatternMatching.dir\build.make CMakeFiles/PatternMatching.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target PatternMatching"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target PatternMatching"
 .PHONY : CMakeFiles/PatternMatching.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/PatternMatching.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PatternMatching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/PatternMatching.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PatternMatching.dir/rule
 
 # Convenience name for target.

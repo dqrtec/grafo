@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Daniel/Desktop/verdadeiros/pattern-match-query/bitmap.cpp" "C:/Users/Daniel/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
-  "C:/Users/Daniel/Desktop/verdadeiros/pattern-match-query/graph.cpp" "C:/Users/Daniel/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
-  "C:/Users/Daniel/Desktop/verdadeiros/pattern-match-query/main.cpp" "C:/Users/Daniel/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
+  "C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/bitmap.cpp" "C:/Users/Arida/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
+  "C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/graph.cpp" "C:/Users/Arida/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
+  "C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/main.cpp" "C:/Users/Arida/Desktop/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

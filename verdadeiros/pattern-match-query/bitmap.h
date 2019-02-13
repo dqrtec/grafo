@@ -23,6 +23,8 @@ public:
 
     Bitmap intercecao(Bitmap interceptado); // Retorna BITMAP da intersecao entre dois bitmaps
 
+    void show();
+
 private:
     vector<int> BM;
 };

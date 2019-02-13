@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Daniel\Desktop\verdadeiros
+CMAKE_SOURCE_DIR = C:\Users\Arida\Desktop\verdadeiros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PatternMatching.dir/depend.make
@@ -58,42 +58,42 @@ include CMakeFiles/PatternMatching.dir/flags.make
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj: CMakeFiles/PatternMatching.dir/flags.make
 CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj: ../pattern-match-query/graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.obj -c C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.obj -c C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\graph.cpp
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\graph.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\graph.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.i
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\graph.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\graph.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\graph.cpp.s
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj: CMakeFiles/PatternMatching.dir/flags.make
 CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj: ../pattern-match-query/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.obj -c C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.obj -c C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\main.cpp
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\main.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\main.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.i
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\main.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\main.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\main.cpp.s
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj: CMakeFiles/PatternMatching.dir/flags.make
 CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj: ../pattern-match-query/bitmap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.obj -c C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\bitmap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.obj -c C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\bitmap.cpp
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\bitmap.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\bitmap.cpp > CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.i
 
 CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Daniel\Desktop\verdadeiros\pattern-match-query\bitmap.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Arida\Desktop\verdadeiros\pattern-match-query\bitmap.cpp -o CMakeFiles\PatternMatching.dir\pattern-match-query\bitmap.cpp.s
 
 # Object files for target PatternMatching
 PatternMatching_OBJECTS = \
@@ -111,7 +111,7 @@ PatternMatching.exe: CMakeFiles/PatternMatching.dir/build.make
 PatternMatching.exe: CMakeFiles/PatternMatching.dir/linklibs.rsp
 PatternMatching.exe: CMakeFiles/PatternMatching.dir/objects1.rsp
 PatternMatching.exe: CMakeFiles/PatternMatching.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PatternMatching.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PatternMatching.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PatternMatching.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/PatternMatching.dir/clean:
 .PHONY : CMakeFiles/PatternMatching.dir/clean
 
 CMakeFiles/PatternMatching.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Daniel\Desktop\verdadeiros C:\Users\Daniel\Desktop\verdadeiros C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug C:\Users\Daniel\Desktop\verdadeiros\cmake-build-debug\CMakeFiles\PatternMatching.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Arida\Desktop\verdadeiros C:\Users\Arida\Desktop\verdadeiros C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug C:\Users\Arida\Desktop\verdadeiros\cmake-build-debug\CMakeFiles\PatternMatching.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PatternMatching.dir/depend
 

@@ -2,6 +2,7 @@
 // Created by zzzmata on 05/02/19.
 //
 
+#include <iostream>
 #include "bitmap.h"
 
 
@@ -15,13 +16,15 @@ Bitmap::Bitmap(vector<int> bm) {
 Bitmap Bitmap::intercecao(Bitmap outro) {
     vector<int> daniel;
 
-    vector<int>::iterator interadorA = this->BM.begin();
-    vector<int>::iterator interadorB = outro.BM.begin();
+    int interadorA = 0;
+    int interadorB = 0;
 
-    while( (interadorA != this->BM.end()) && (interadorB != outro.BM.end()) ){
-        if( *interadorA == *interadorB ){
-            daniel.push_back(*interadorA);
-        }else if( *interadorA > *interadorB ){
+    while( (interadorA < BM.size()) && ( interadorB < outro.BM.size()) ){
+        if( BM[interadorA] == outro.BM[interadorB] ){
+            daniel.push_back(BM[interadorA]);
+            interadorA++;
+            interadorB++;
+        }else if( BM[interadorA] > outro.BM[interadorB] ){
             interadorB++;
         }else{
             interadorA++;
@@ -42,4 +45,11 @@ void Bitmap::ordenarVetor(){
 
 int Bitmap::getN(){
     return this->BM.size();
+}
+
+void Bitmap::show(){
+    for (int i = 0; i < getN(); ++i) {
+        cout<<BM[i]<<"  ";
+    }
+    cout<<endl;
 }
