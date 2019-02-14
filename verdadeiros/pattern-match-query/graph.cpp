@@ -18,6 +18,8 @@ Graph::Graph(int N) {
     }
 }
 
+Graph::Graph() {}
+
 void Graph::addEdge(int v1, int v2)
 {
     // Adiciona vértice v2 à lista de vértices adjacentes de v1
@@ -172,6 +174,8 @@ Bitmap Graph::bitmapDistanciaPermitida(int start, int delta, int ecentricidadeVe
     Bitmap FP(vetorVerticesAtingidosDistanciaPermitida);
     return FP;
 }
+
+
 
 int Graph::getN() {
     return this->N;

@@ -15,19 +15,20 @@ using namespace std;
 
 int DELTA = 4;
 
+Graph loadGraphYeast();
+
 Graph Q(3);
 Graph G(12);
 
 void Query(int interacaoI,Bitmap FI,int* ecentricidadeQ, string* OrdemLabels);
 
 int main(int argc, char const *argv[]) {
+    auto inicio = std::chrono::high_resolution_clock::now();
 
-    Q.getV()[0].setLabel("A");
-    Q.getV()[1].setLabel("B");
-    Q.getV()[2].setLabel("C");
+    Q.getV()[0].setLabel("YBR236C");
+    Q.getV()[1].setLabel("YOR151C");
 
     Q.addEdge(0, 1);
-    Q.addEdge(1, 2);
 
 /*
     G.getV()[0].setLabel("A");
@@ -38,6 +39,12 @@ int main(int argc, char const *argv[]) {
     G.addEdge(1, 2);
 */
 
+    G = loadGraphYeast();
+
+    cout<<G.getV()[6].getLabel()<<endl;
+    for (int i = 0; i < G.getN(); i++) {
+    }
+/*
     G.getV()[0].setLabel("A");
     G.getV()[1].setLabel("A");
     G.getV()[2].setLabel("B");
@@ -66,7 +73,7 @@ int main(int argc, char const *argv[]) {
     G.addEdge(11, 10);
     G.addEdge(10, 9);
     G.addEdge(9, 1);
-
+*/
 
 
     int* ecentricidadeQ = new int[Q.getN()];
@@ -81,6 +88,9 @@ int main(int argc, char const *argv[]) {
         }
     }
 
+    auto fim = std::chrono::high_resolution_clock::now() - inicio;
+    long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(fim).count();
+    cout<< microseconds;
     return 0;
 }
 
@@ -96,4 +106,37 @@ void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
             }
         }
     }
+}
+
+Graph loadGraphYeast() {
+    fstream file;
+    file.open("Datasets/YeastS.net");
+    string str;
+    while(file >> str) {
+        if(str == "*vertices"){
+            break;
+        }
+    }
+    int N;
+    file >> N;
+    Graph G(N);
+    int id;
+    string label;
+    while(file >> id >> label) {
+        G.getV()[id-1].setLabel(label);
+        if(id == N-1){
+            break;
+        }
+    }
+    file >> str;
+    if(str == "*edges"){
+        int u, v;
+        while(file >> u >> v) {
+            if( u != v) {
+                G.addEdge(u, v);
+                G.addEdge(v, u);
+            }
+        }
+    }
+    return G;
 }

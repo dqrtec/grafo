@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
-  "CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
-  "CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
+  "CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.o"
+  "CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.o"
+  "CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.o"
   "PatternMatching.pdb"
-  "PatternMatching.exe"
-  "PatternMatching.exe.manifest"
-  "libPatternMatching.dll.a"
+  "PatternMatching"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,15 +6,51 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/bitmap.cpp
-iostream
--
-bitmap.h
-C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/bitmap.h
-
-C:/Users/Arida/Desktop/verdadeiros/pattern-match-query/bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
 vector
 -
 algorithm
 -
+
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.h
+list
+-
+vector
+-
+map
+-
+set
+-
+string
+-
+fstream
+-
+bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
+
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+set
+-
+list
+-
+map
+-
+deque
+-
+chrono
+-
+climits
+-
+graph.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.h
+bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
 

@@ -3,6 +3,7 @@
 #include <map>
 #include <set>
 #include <string>
+#include <fstream>
 #include "bitmap.h"
 
 using namespace std;
@@ -24,7 +25,8 @@ private:
     int M; // Número de arestas
     list<int>* adjL; // Array contendo as listas de adjacências     
     Vertex* V; // Array contendo os vértices
-public:    
+public:
+    Graph(); // Construtor
     Graph(int N); // Construtor
 
     void addEdge(int v1, int v2);
@@ -48,5 +50,7 @@ public:
     // Retorna Ordem das labels e coloca a ecentricidade
     // das respectivas labels na variavel ecentricidadeQ
     string* ListaM(int* ecentricidadeQ);
+
+    //Graph loadGraphYeast();
 };
 
