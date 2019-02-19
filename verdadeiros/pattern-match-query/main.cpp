@@ -13,10 +13,10 @@
 
 using namespace std;
 
-int DELTA = 4;
+int DELTA = 1;
 
-Graph Q(3);
-Graph G("/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/Datasets/YeastS.net");
+Graph Q(2);
+Graph G("../../Datasets/YeastS.net");
 
 void Query(int interacaoI,Bitmap FI,int* ecentricidadeQ, string* OrdemLabels);
 
@@ -28,12 +28,9 @@ int main(int argc, char const *argv[]) {
 
     Q.addEdge(0, 1);
 
-
-    int* ecentricidadeQ = new int[Q.getN()];
     // Ordena as labels pela ecentricidade e coloca suas respectivas exentricidades no vertice ecentricidadeQ
+    int* ecentricidadeQ = new int[Q.getN()];
     string* Ordemlabls = Q.ListaM(ecentricidadeQ);
-    cout<<ecentricidadeQ[0]<<endl;
-    cout<<ecentricidadeQ[1]<<endl;
 
     Vertex* vetorVerticesG = G.getV();
     for (int m1 = 0; m1 < G.getN(); m1++){
@@ -45,15 +42,13 @@ int main(int argc, char const *argv[]) {
 
     auto fim = std::chrono::high_resolution_clock::now() - inicio;
     long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(fim).count();
-    cout<< microseconds;
+    cout<<"tempo gasto = "<< microseconds;
+
     return 0;
 }
 
 void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
     for (int mi = 0; mi < FI.getN(); mi++) {
-        cout<<"---------------------"<<endl;
-        cout<<FI.getN()<<endl;
-        FI.show();
         if( (G.getV()[ FI.getPosition(mi) ].getLabel() == Ordemlabls[interacaoI-1]) ){
             if(interacaoI == Q.getN()){
                 cout<<"Query"<<endl;

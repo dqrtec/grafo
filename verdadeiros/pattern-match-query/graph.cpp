@@ -42,7 +42,7 @@ Graph::Graph(string nomeArquivo) {
     string label;
     while(file >> id >> label) {
         this->getV()[id-1].setLabel(label);
-        if(id == n-1){
+        if(id == n){
             break;
         }
     }
@@ -51,8 +51,8 @@ Graph::Graph(string nomeArquivo) {
         int u, v;
         while(file >> u >> v) {
             if( u != v) {
-                this->addEdge(u, v);
-                this->addEdge(v, u);
+                this->addEdge(u-1, v-1);
+                this->addEdge(v-1, u-1);
             }
         }
     }
@@ -163,12 +163,10 @@ string* Graph::ListaM(int* ecentricidadeQ) {
 
     }
 
-
     for (int k = 0; k < N; k++) {
         ordemLabels[k] = V[ listaTrocas[k] ].getLabel();
         ecentricidadeQ[k] = listaEcentricidadesOrdenadas[k];
     }
-
 
     return ordemLabels;
 }
@@ -215,6 +213,13 @@ Bitmap Graph::bitmapDistanciaPermitida(int start, int delta, int ecentricidadeVe
     return FP;
 }
 
+void Graph::ImprimeListaAdjacencia(int i){
+    list<int>::iterator it;
+    cout<<"Lista de adjacencia =";
+    for(it = adjL[i].begin(); it != adjL[i].end(); it++) {
+        cout <<" "<<*it<<" ";
+    }
+}
 
 
 int Graph::getN() {

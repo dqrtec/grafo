@@ -52,6 +52,6 @@ public:
     // das respectivas labels na variavel ecentricidadeQ
     string* ListaM(int* ecentricidadeQ);
 
-    //Graph loadGraphYeast();
+    void ImprimeListaAdjacencia(int i);
 };
 
