@@ -8,104 +8,104 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug"/>
+				<Option working_dir="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug"/>
+				<Option working_dir="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PatternMatching">
-				<Option output="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/PatternMatching" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug"/>
+				<Option output="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/PatternMatching" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 PatternMatching"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 PatternMatching"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PatternMatching/fast">
-				<Option output="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/PatternMatching" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug"/>
+				<Option output="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/PatternMatching" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 PatternMatching/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 PatternMatching/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug"/>
+				<Option working_dir="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/arida/Área\ de\ Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/megazzzmata/Área\ de\ Trabalho/git/grafo/verdadeiros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/Datasets/SF">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/Datasets/SF">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/Datasets/YeastS.net">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/Datasets/YeastS.net">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.cpp">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/bitmap.cpp">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/bitmap.h">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.cpp">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/graph.cpp">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.h">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/graph.h">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/main.cpp">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/main.cpp">
 			<Option target="PatternMatching"/>
 		</Unit>
-		<Unit filename="/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/CMakeLists.txt">
+		<Unit filename="/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

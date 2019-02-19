@@ -28,6 +28,7 @@ private:
 public:
     Graph(); // Construtor
     Graph(int N); // Construtor
+    Graph(string nomeArquivo);
 
     void addEdge(int v1, int v2);
 

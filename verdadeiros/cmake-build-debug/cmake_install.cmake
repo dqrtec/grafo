@@ -1,4 +1,4 @@
-# Install script for directory: /home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros
+# Install script for directory: /home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

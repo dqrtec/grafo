@@ -18,6 +18,46 @@ Graph::Graph(int N) {
     }
 }
 
+Graph::Graph(string nomeArquivo) {
+    fstream file;
+    file.open(nomeArquivo);
+    string str;
+    int i = 1;
+    while(file >> str) {
+        if(str == "*vertices"){
+            break;
+        }
+    }
+    int n;
+    file >> n;
+
+    this->N = n;
+    this->adjL = new list<int>[n]; // Cria n listas de adjacências
+    this->V = new Vertex[n];
+    for (int i = 0; i < n; i++){
+        this->V[i].setId(i);
+    }
+
+    int id;
+    string label;
+    while(file >> id >> label) {
+        this->getV()[id-1].setLabel(label);
+        if(id == n-1){
+            break;
+        }
+    }
+    file >> str;
+    if(str == "*edges"){
+        int u, v;
+        while(file >> u >> v) {
+            if( u != v) {
+                this->addEdge(u, v);
+                this->addEdge(v, u);
+            }
+        }
+    }
+}
+
 Graph::Graph() {}
 
 void Graph::addEdge(int v1, int v2)
