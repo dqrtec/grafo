@@ -142,8 +142,12 @@ GraphBitmap Graph::bitmapDistanciaPermitida(int start, int delta, int ecentricid
     for (int i = 0; i < this->N; i++) {
         visited[i] = false;
         dist[i] = INT_MAX;
-        Bitmap d( &V[i] , false );
-        l1.push_back( &d );
+        /// Bitmap d( &V[i] , false ); <- antigo
+        Bitmap *d = new Bitmap( &V[i] , false ); /// Erro estava aqui
+        /// Estava criando uma "Classa Local" dessa forma ele
+        /// instancia na memória. Talvez a gente deva se preocupar
+        /// Com a quantidade de Bitmaps que a gente vai instanciar
+        l1.push_back( d );
     }
 
     visited[start] = true;
