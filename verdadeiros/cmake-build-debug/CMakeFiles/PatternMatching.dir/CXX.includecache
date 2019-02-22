@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
 vector
 -
 algorithm
 -
 
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/graph.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.h
 list
 -
 vector
@@ -26,9 +26,9 @@ string
 fstream
 -
 bitmap.h
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
 
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/main.cpp
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/main.cpp
 iostream
 -
 fstream
@@ -50,7 +50,7 @@ chrono
 climits
 -
 graph.h
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/graph.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/graph.h
 bitmap.h
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/pattern-match-query/bitmap.h
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/pattern-match-query/bitmap.h
 

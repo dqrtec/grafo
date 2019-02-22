@@ -1,3 +1,3 @@
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir
-/home/megazzzmata/Área de Trabalho/git/grafo/verdadeiros/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/CMakeFiles/PatternMatching.dir
+/home/arida/Área de Trabalho/GRAFOS/codigos/verdadeiros/cmake-build-debug/CMakeFiles/edit_cache.dir
