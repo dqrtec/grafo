@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Daniel/Desktop/bool/pattern-match-query/bitmap.cpp" "C:/Users/Daniel/Desktop/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
-  "C:/Users/Daniel/Desktop/bool/pattern-match-query/graph.cpp" "C:/Users/Daniel/Desktop/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
-  "C:/Users/Daniel/Desktop/bool/pattern-match-query/main.cpp" "C:/Users/Daniel/Desktop/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/pattern-match-query/bitmap.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/pattern-match-query/graph.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/pattern-match-query/main.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

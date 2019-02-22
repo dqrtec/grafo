@@ -1,18 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Daniel\Desktop\bool
--- The C compiler identification is GNU 5.3.0
--- The CXX compiler identification is GNU 5.3.0
--- Check for working C compiler: C:/MinGW/bin/gcc.exe
--- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: C:/MinGW/bin/g++.exe
--- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
+/home/arida/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Daniel/Desktop/bool/cmake-build-debug
+-- Build files have been written to: /home/arida/Área de Trabalho/GRAFOS/codigos/bool/cmake-build-debug

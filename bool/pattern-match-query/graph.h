@@ -24,8 +24,10 @@ private:
     int M; // Número de arestas
     list<int>* adjL; // Array contendo as listas de adjacências     
     Vertex* V; // Array contendo os vértices
-public:    
+public:
+    Graph(); // Construtor
     Graph(int N); // Construtor
+    Graph(string nomeArquivo);
 
     void addEdge(int v1, int v2);
 
