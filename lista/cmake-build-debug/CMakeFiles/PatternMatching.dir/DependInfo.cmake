@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/bitmap.cpp" "C:/Users/Daniel/Desktop/Nova pasta/grafo/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.obj"
-  "C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/graph.cpp" "C:/Users/Daniel/Desktop/Nova pasta/grafo/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.obj"
-  "C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/graphbitmap.cpp" "C:/Users/Daniel/Desktop/Nova pasta/grafo/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graphbitmap.cpp.obj"
-  "C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/main.cpp" "C:/Users/Daniel/Desktop/Nova pasta/grafo/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.obj"
-  "C:/Users/Daniel/Desktop/Nova pasta/grafo/pattern-match-query/vertex.cpp" "C:/Users/Daniel/Desktop/Nova pasta/grafo/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/vertex.cpp.obj"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/pattern-match-query/bitmap.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/bitmap.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/pattern-match-query/graph.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graph.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/pattern-match-query/graphbitmap.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/graphbitmap.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/pattern-match-query/main.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/main.cpp.o"
+  "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/pattern-match-query/vertex.cpp" "/home/arida/Área de Trabalho/GRAFOS/codigos/lista/cmake-build-debug/CMakeFiles/PatternMatching.dir/pattern-match-query/vertex.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -11,7 +11,7 @@ private:
     Vertex** V; // Array contendo os v�rtices
 public:
     // Construtor
-    GraphBitmap(int vertexNumber, vector<Bitmap*> bitmapList);
+    GraphBitmap(vector<Bitmap*> bitmapList);
 
     //Recebe um v�rtice e retorna o valor do boolean do bitmap dele
     bool getValue(Vertex v);

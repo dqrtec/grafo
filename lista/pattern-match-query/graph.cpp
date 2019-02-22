@@ -18,6 +18,48 @@ Graph::Graph(int N) {
     }
 }
 
+Graph::Graph(string nomeArquivo) {
+    fstream file;
+    file.open(nomeArquivo);
+    string str;
+    int i = 1;
+    while(file >> str) {
+        if(str == "*vertices"){
+            break;
+        }
+    }
+    int n;
+    file >> n;
+
+    this->N = n;
+    this->adjL = new list<int>[n]; // Cria n listas de adjacências
+    this->V = new Vertex[n];
+    for (int i = 0; i < n; i++){
+        this->V[i].setId(i);
+    }
+
+    int id;
+    string label;
+    while(file >> id >> label) {
+        this->getV()[id-1].setLabel(label);
+        if(id == n){
+            break;
+        }
+    }
+    file >> str;
+    if(str == "*edges"){
+        int u, v;
+        while(file >> u >> v) {
+            if( u != v) {
+                this->addEdge(u-1, v-1);
+                this->addEdge(v-1, u-1);
+            }
+        }
+    }
+}
+
+Graph::Graph() {}
+
 void Graph::addEdge(int v1, int v2)
 {
     // Adiciona vértice v2 à lista de vértices adjacentes de v1
@@ -174,7 +216,7 @@ GraphBitmap Graph::bitmapDistanciaPermitida(int start, int delta, int ecentricid
         }
     }
 
-    GraphBitmap FP(contadorVerticesAtingidos,l1);
+    GraphBitmap FP(l1);
     return FP;
 }
 

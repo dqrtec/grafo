@@ -1,7 +1,7 @@
 #include "graphbitmap.h"
 
-GraphBitmap::GraphBitmap(int vertexNumber, vector<Bitmap*> bitmapList){
-    N = vertexNumber;
+GraphBitmap::GraphBitmap( vector<Bitmap*> bitmapList){
+    N = bitmapList.size();
     bitMapList.resize(N);
     V = (Vertex**)malloc(N*sizeof(Vertex*));
     for(int i = 0; i < bitmapList.size(); i++){
@@ -44,7 +44,7 @@ GraphBitmap GraphBitmap::intersection(GraphBitmap* other){
         bool obi = bitMapList[i]->getBool();
         newVB[i]->setBool(nbi && obi);
     }
-    GraphBitmap* newGB = new GraphBitmap(N,newVB);
+    GraphBitmap* newGB = new GraphBitmap(newVB);
     return *newGB;
 }
 
@@ -60,7 +60,7 @@ GraphBitmap GraphBitmap::join(GraphBitmap* other){
     for(int i = 0; i < allTrue.size(); i++){
         newVB[allTrue[i]->getId()]->setBool(true);
     }
-    GraphBitmap* newGB = new GraphBitmap(N,newVB);
+    GraphBitmap* newGB = new GraphBitmap(newVB);
     return *newGB;
 }
 
