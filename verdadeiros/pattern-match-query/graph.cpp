@@ -22,7 +22,6 @@ Graph::Graph(string nomeArquivo) {
     fstream file;
     file.open(nomeArquivo);
     string str;
-    int i = 1;
     while(file >> str) {
         if(str == "*vertices"){
             break;
@@ -42,7 +41,7 @@ Graph::Graph(string nomeArquivo) {
     string label;
     while(file >> id >> label) {
         this->getV()[id-1].setLabel(label);
-        if(id == n){
+        if(id == 2361){
             break;
         }
     }
@@ -52,7 +51,7 @@ Graph::Graph(string nomeArquivo) {
         while(file >> u >> v) {
             if( u != v) {
                 this->addEdge(u-1, v-1);
-                this->addEdge(v-1, u-1);
+                //this->addEdge(v-1, u-1);
             }
         }
     }
@@ -218,6 +217,58 @@ void Graph::ImprimeListaAdjacencia(int i){
     cout<<"Lista de adjacencia =";
     for(it = adjL[i].begin(); it != adjL[i].end(); it++) {
         cout <<" "<<*it<<" ";
+    }
+}
+
+void Graph::ImprimirVerticesQueCompoemCaminho(Graph Q, int* verticesCompoeMathing, int DELTA, int* ecentricidadeQ){
+    for(int indiceParteRota=0; indiceParteRota< Q.getN()-1; indiceParteRota++){
+        cout <<"inicio/fim:"<<this->V[ verticesCompoeMathing[indiceParteRota] ].getLabel()<<" / "<< this->V[  verticesCompoeMathing[indiceParteRota+1] ].getLabel()<<" / ";
+        cout<<"rota parte "<<indiceParteRota+1<<" : ";
+        imprimirBuscaProfundidade( verticesCompoeMathing[indiceParteRota], verticesCompoeMathing[indiceParteRota+1], DELTA, ecentricidadeQ[indiceParteRota]);
+    }
+}
+
+void Graph::imprimirBuscaProfundidade( int inicio, int fim, int DELTA, int ecentricidade){
+    int visited[this->N]; // Array para armazenar se o vértice foi visitado ou não
+    int pai[this->N];
+    int* dist = new int[this->N]; // Distância do vértice inicial
+    int distanciaMaximaLargura = DELTA * ecentricidade;
+
+    for (int i = 0; i < this->N; i++) {
+        visited[i] = false;
+        dist[i] = INT_MAX;
+    }
+
+    visited[inicio] = true;
+    dist[inicio] = 0;
+    queue<int> Queue;
+    Queue.push(inicio);
+
+    while (! Queue.empty()) {
+        int u = Queue.front(); // Pega o primeiro vértice da fila
+        Queue.pop();
+
+        list<int>::iterator it;
+        for(it = adjL[u].begin(); it != adjL[u].end(); it++) { // Para cada vértice na lista de adjacências de u
+            if(visited[*it] == false) { // Se ele ainda não foi visitado
+                visited[*it] = true;
+                dist[*it] = dist[u] + 1;
+                if(dist[*it] <= distanciaMaximaLargura) {
+                    pai[*it] = u;
+                    if(fim == *it) {
+                        visited[*it] = false;
+                        int interadorIndicePai = *it;
+                        while (pai[interadorIndicePai] != inicio) {
+                            cout << " " <<this->V[pai[interadorIndicePai]].getLabel() << " ";
+                            interadorIndicePai = pai[interadorIndicePai];
+                        }
+                        cout << endl;
+                    }else{
+                        Queue.push(*it); // Coloca vértice na fila
+                    }
+                }
+            }
+        }
     }
 }
 

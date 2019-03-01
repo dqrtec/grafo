@@ -13,7 +13,7 @@
 
 using namespace std;
 
-int DELTA = 1000;
+int DELTA = 5;
 
 Graph Q(8);
 
@@ -61,7 +61,7 @@ int main(int argc, char const *argv[]) {
 
     auto fim = std::chrono::high_resolution_clock::now() - inicio;
     long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(fim).count();
-    cout<<"tempo gasto = "<< microseconds<<endl;
+    cout<<"\nTempo gasto = "<< microseconds<<endl;
 
     return 0;
 }
@@ -69,10 +69,11 @@ int main(int argc, char const *argv[]) {
 void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
     for (int mi = 0; mi < FI.getN(); mi++) {
         if( (G.getV()[ FI.getPosition(mi) ].getLabel() == Ordemlabls[interacaoI-1]) ){
-            caminhoVertices[interacaoI-1] = mi ;
+            caminhoVertices[interacaoI-1] = G.getV()[ FI.getPosition(mi) ].getId() ;
             if(interacaoI == Q.getN()){
-                cout<<"Query"<<endl;
+                cout<<"\nQuery"<<endl;
                 impirmirCaminhoVertices();
+                G.ImprimirVerticesQueCompoemCaminho(Q,caminhoVertices,DELTA,ecentricidadeQ);
             }else{
                 Bitmap areaBuscaApartirMi = G.bitmapDistanciaPermitida(mi,DELTA,ecentricidadeQ[interacaoI-1]) ;
                 Bitmap proximaBitmapBusca = FI.intercecao( areaBuscaApartirMi );
@@ -83,6 +84,7 @@ void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
 }
 
 void impirmirCaminhoVertices(){
+    cout<<"Os vertices G que compoẽm a query são : ";
     for(int i=0; i< Q.getN(); i++ ){
         cout<<caminhoVertices[i] <<", ";
     }
