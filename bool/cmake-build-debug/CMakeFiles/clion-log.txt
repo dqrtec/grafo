@@ -1,4 +1,4 @@
-/home/arida/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool"
+/snap/clion/61/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/arida/Área de Trabalho/GRAFOS/codigos/bool"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/arida/Área de Trabalho/GRAFOS/codigos/bool/cmake-build-debug

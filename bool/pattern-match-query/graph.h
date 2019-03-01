@@ -50,5 +50,8 @@ public:
     // Retorna Ordem das labels e coloca a ecentricidade
     // das respectivas labels na variavel ecentricidadeQ
     string* ListaM(int* ecentricidadeQ);
+
+    void ImprimirVerticesQueCompoemCaminho(Graph Q, int* verticesCompoeMathing, int DELTA, int* ecentricidadeQ);
+    void imprimirBuscaProfundidade( int inicio, int fim, int DELTA, int ecentricidade);
 };
 

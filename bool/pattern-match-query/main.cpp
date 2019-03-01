@@ -72,6 +72,7 @@ void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
             if(interacaoI == Q.getN()){
                 cout<<"Query"<<endl;
                 impirmirCaminhoVertices();
+                G.ImprimirVerticesQueCompoemCaminho(Q,caminhoVertices,DELTA,ecentricidadeQ);
             }else{
                 Bitmap areaBuscaApartirMi = G.bitmapDistanciaPermitida(mi,DELTA,ecentricidadeQ[interacaoI-1]) ;
                 Bitmap proximaBitmapBusca = FI.intercecao( areaBuscaApartirMi );
@@ -82,6 +83,7 @@ void Query(int interacaoI, Bitmap FI, int* ecentricidadeQ,string* Ordemlabls){
 }
 
 void impirmirCaminhoVertices(){
+    cout<<"Os vertices G que compoẽm a query são : ";
     for(int i=0; i< Q.getN(); i++ ){
         cout<<caminhoVertices[i] <<", ";
     }
