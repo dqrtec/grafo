@@ -1,6 +1,8 @@
 import pygame
 import sys
 import random
+import threading
+import time
 
 class Vertice:
 	def __init__(self,TelaInicial,cor_vertice,x,y):
@@ -54,8 +56,12 @@ tempoClickDuplo = 0.0
 quantidadVerticeClickDuplo = 0
 listaVerticesClickDuplo = [None,None]
 
+#pygame.time.set_timer(pygame.USEREVENT, 50)#solucao 2 - nao ha muito ganho - 50%
+
 while True:
-	#TelaInicial.fill(bkg)#limpar tela
+	#time.sleep(0.1) # solucao 1 - deixa meio lento - 20%
+	pygame.time.wait(10)# solucao 3 - 
+	TelaInicial.fill(bkg)
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
@@ -73,7 +79,13 @@ while True:
 			if event.button == 1:
 				for i in lista_vetices:
 					if i.retangulo.collidepoint(event.pos):
-#
+
+						if tempoClickDuplo<0.5:
+							listaVerticesClickDuplo[ quantidadVerticeClickDuplo ] = i
+							quantidadVerticeClickDuplo += 1
+						else:
+							tempoClickDuplo = 0
+
 						rectangle_draging = True
 						mouse_x, mouse_y = event.pos
 						offset_x = i.x - mouse_x
@@ -112,11 +124,11 @@ while True:
 
 	for i in lista_vetices:
 		vertice_atual = pygame.draw.circle(TelaInicial, i.coloracao,(i.x, i.y),20)
-		#GOsurf = myFont.render(i.label, True, pygame.Color(0,100,255))
-		#TelaInicial.blit(GOsurf,vertice_atual)
+		GOsurf = myFont.render(i.label, True, pygame.Color(0,100,255))
+		TelaInicial.blit(GOsurf,vertice_atual)
 
-	#tempoClickDuplo+=0.01
+	tempoClickDuplo+=0.01
 
 
-	#pygame.display.update()
-	#pygame.display.flip()
+	pygame.display.update()
+	pygame.display.flip()
