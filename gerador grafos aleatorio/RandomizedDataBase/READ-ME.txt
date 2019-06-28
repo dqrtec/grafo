@@ -1,0 +1,21 @@
+# Graph Archive (.graph)
+n m
+label0
+label1
+...
+labeln-1
+v1x v1y
+v2x v2y
+...
+vmx vmy
+
+# Query Archive (.query)
+n m d
+label0
+label1
+...
+labeln-1
+v1x v1y
+v2x v2y
+...
+vmx vmy
