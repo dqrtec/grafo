@@ -1,0 +1,30 @@
+#LOGO
+	logo = pygame.image.load("g1.png")
+	pygame.display.set_icon(logo)
+
+	pygame.display.set_caption('Gerado de Grafos')
+
+#tratar imagens
+	imagem = pygame.image.load("g1.png")# os.path.join() 
+	TelaInicial.blit(imagem, (50,50))# blit copia pixels de um local para outro
+	imagem.set_colorkey((255,0,255))# tira todos os pixels com determinada cor
+	imagem.set_alpha(128)# deixa a imgem meio transparente
+
+#TEXTO
+	myFont = pygame.font.SysFont('monaco', 72)
+	GOsurf = myFont.render('GRAPH!', True, pygame.Color(0,0,255))
+	GOrect = GOsurf.get_rect()
+	GOrect.midtop = (360, 15)
+	TelaInicial.blit(GOsurf,GOrect)
+
+
+'''
+						if tempoClickDuplo<=0.5:
+							listaVerticesClickDuplo[ quantidadVerticeClickDuplo ] = i
+							quantidadVerticeClickDuplo+=1
+						else:
+							tempoClickDuplo = 0
+'''
+
+https://www.flaticon.com/authors/daniel-bruce
+https://www.freepik.com/
